@@ -15,5 +15,6 @@ namespace Inheritance
         public bool IsScaly { get; set; }
         public string Habitat { get; set; }
         public bool CanGrowTail { get; set; }
+        
     }
 }

@@ -11,6 +11,7 @@ namespace Inheritance
         public int Age { get; set; }
         public int LegCount { get; set; }
         public string LandSeaAir { get; set; }
+        public string Name { get; set; }
 
     }
 }

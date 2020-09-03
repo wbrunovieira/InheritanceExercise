@@ -31,9 +31,11 @@ namespace Inheritance
 
             var myBird = new Bird();
             myBird.WingColor = "blue";
+        
             myBird.CanFLy = true;
             myBird.WillMigrate = true;
             myBird.BeakLength = 3.5;
+            myBird.Name = "tucano";
 
             var lizard = new Reptile()
             {
@@ -41,17 +43,15 @@ namespace Inheritance
                 IsScaly = true,
                 Habitat = "swamp",
                 CanGrowTail = true,
+                Name = "lizard",
             };
 
-            /// <summary>
-            /// 
-            /// 😀
-            /// </summary>
-
+          
             var myAnimals = new Animal[] {myBird, lizard };
 
             foreach (var animal in myAnimals)
             {
+                Console.WriteLine($"Animal: {animal.Name}");
                 Console.WriteLine($"Alive:{animal.IsAlive}");
                 Console.WriteLine($"Age:{animal.Age} years old.");
                 Console.WriteLine($"It has:{animal.LegCount} legs");

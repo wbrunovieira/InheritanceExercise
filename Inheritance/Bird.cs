@@ -15,5 +15,6 @@ namespace Inheritance
         public bool CanFLy { get; set; }
         public bool WillMigrate { get; set; }
         public double BeakLength { get; set; }
+        
     }
 }
